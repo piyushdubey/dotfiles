@@ -8,7 +8,8 @@ brew install \
     jq \
     node \
     nvm \
-    yarn
+    yarn \
+    htop
 mkdir -p ~/.nvm
 
 #Python development
@@ -54,7 +55,6 @@ brew install --cask \
     calibre \
     flux \
     keepingyouawake \
-    lastpass \
     spectacle \
     yubico-yubikey-manager
 
