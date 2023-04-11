@@ -33,7 +33,7 @@ brew install \
     gcc \
     gettext \
     pkg-config \
-    supabase \
+    supabase/tap/supabase \
     s3cmd
 brew link --force gettext
 
@@ -57,7 +57,7 @@ brew install --cask \
     calibre \
     flux \
     keepingyouawake \
-    spectacle \
+    rectangle \
     yubico-yubikey-manager \
     maccy
 
