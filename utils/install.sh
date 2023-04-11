@@ -49,7 +49,8 @@ brew install --cask \
 brew install \
     speedtest-cli \
     tree \
-    wget
+    wget \
+    fig
 
 # Tool chain
 brew install --cask \
@@ -57,7 +58,8 @@ brew install --cask \
     flux \
     keepingyouawake \
     spectacle \
-    yubico-yubikey-manager
+    yubico-yubikey-manager \
+    maccy
 
 brew tap homebrew/cask-drivers
 brew install --cask yubico-authenticator
