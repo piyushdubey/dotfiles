@@ -33,6 +33,7 @@ brew install \
     gcc \
     gettext \
     pkg-config \
+    supabase \
     s3cmd
 brew link --force gettext
 
