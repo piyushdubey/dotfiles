@@ -54,7 +54,8 @@ brew install \
 
 # Calibre
 brew install --cask \
-    calibre
+    calibre \
+    notion
 
 # Tool chain
 brew install --cask \
