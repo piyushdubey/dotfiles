@@ -52,9 +52,12 @@ brew install \
     wget \
     fig
 
+# Calibre
+brew install --cask \
+    calibre
+
 # Tool chain
 brew install --cask \
-    calibre \
     flux \
     keepingyouawake \
     rectangle \
