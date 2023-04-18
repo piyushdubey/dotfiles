@@ -7,7 +7,7 @@ alias ll='ls -alGh'
 alias ls='ls -Gh'
 
 # Generic utils
-alias c='clear'
+alias c="clear"
 
 # Mimic vim functions
 alias :q='exit'
