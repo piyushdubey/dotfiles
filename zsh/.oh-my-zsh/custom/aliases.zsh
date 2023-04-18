@@ -6,6 +6,9 @@ alias du='du -h -d 2'
 alias ll='ls -alGh'
 alias ls='ls -Gh'
 
+# Generic utils
+alias c='clear'
+
 # Mimic vim functions
 alias :q='exit'
 
