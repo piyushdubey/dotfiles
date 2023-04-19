@@ -12,10 +12,13 @@ brew install \
     htop
 mkdir -p ~/.nvm
 
-#Python development
+# Python development
 brew install \
     python3 \
-    
+
+# Go development
+brew install \
+    go \
 
 # IDEs and other guis
 brew install --cask \
