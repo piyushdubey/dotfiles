@@ -45,11 +45,11 @@
     rh = reset --hard
 
     # stash
-    st = stash -u
-    stp = stash pop
+    sth = stash -u
+    sthp = stash pop
 
     # status
-    s = status
+    st = status
 
 [apply]
     # Detect whitespace errors when applying a patch
