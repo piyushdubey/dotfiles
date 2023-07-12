@@ -11,6 +11,9 @@ brew install yarn
 brew install htop
 mkdir -p ~/.nvm
 
+# Java development
+brew install java
+
 # Python development
 brew install python3
 
