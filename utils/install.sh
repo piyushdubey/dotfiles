@@ -14,6 +14,10 @@ mkdir -p ~/.nvm
 # Java development
 brew install java
 
+# PlantUML (PlantUML dependencies - java, graphviz, plantuml)
+brew install graphviz
+brew install plantuml
+
 # Python development
 brew install python3
 
@@ -79,7 +83,6 @@ brew install --cask maccy
 brew install --cask vlc
 brew install --cask sourcetree
 
-brew tap homebrew/cask-drivers
 brew install --cask yubico-authenticator
 brew install --cask bitwarden
 
