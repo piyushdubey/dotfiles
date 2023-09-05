@@ -74,6 +74,13 @@ brew install --cask dropbox
 # Google Drive
 brew install --cask google-drive
 
+# Spotify
+brew install --cask spotify
+
+# Wacom + Inkscape
+brew install --cask wacom-tablet
+brew install --cask inkscape
+
 # Tool chain
 brew install --cask flux 
 brew install --cask keepingyouawake 
