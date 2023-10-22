@@ -21,6 +21,9 @@ brew install plantuml
 # Python development
 brew install python3
 
+# Rust development
+brew install rust
+
 # Go development
 brew install go
 
@@ -29,15 +32,18 @@ brew install --cask mysql-shell
 brew install --cask quicklook-json
 brew install --cask sequel-ace
 brew install --cask visual-studio-code
-brew install --cask docker
+brew install docker
+brew install kubectl
 
 # Compilers, and clis.
 brew install awscli
+brew install azure-cli
 brew install gcc
 brew install gettext
 brew install pkg-config
 brew install supabase/tap/supabase
 brew install s3cmd
+brew install --cask google-cloud-sdk
 
 brew link --force gettext
 
