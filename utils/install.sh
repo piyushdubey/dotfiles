@@ -33,12 +33,14 @@ brew install --cask quicklook-json
 brew install --cask sequel-ace
 brew install --cask visual-studio-code
 brew install docker
+brew install docker-compose
 brew install kubectl
 
 # Compilers, and clis.
 brew install awscli
 brew install azure-cli
 brew install gcc
+brew install protobuf
 brew install gettext
 brew install pkg-config
 brew install supabase/tap/supabase
