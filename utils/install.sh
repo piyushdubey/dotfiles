@@ -82,6 +82,9 @@ brew install --cask dropbox
 # Google Drive
 brew install --cask google-drive
 
+# Photo editing
+brew install --cask gimp
+
 # Spotify
 brew install --cask spotify
 
