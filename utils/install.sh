@@ -109,5 +109,8 @@ brew install --cask discord
 brew install --cask slack
 brew install --cask zoom
 
+# 3D Printer Software
+brew install --cask bambu-studio
+
 npm i -g \
     aws-cdk
