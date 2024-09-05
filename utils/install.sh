@@ -109,6 +109,9 @@ brew install --cask discord
 brew install --cask slack
 brew install --cask zoom
 
+# Stock/Options Trading packages
+brew install --cask tradingview
+
 # 3D Printer Software
 brew install --cask bambu-studio
 
