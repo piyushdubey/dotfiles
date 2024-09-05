@@ -110,7 +110,8 @@ brew install --cask slack
 brew install --cask zoom
 
 # Stock/Options Trading packages
-brew install --cask tradingview
+brew install --cask tradingview #India
+brew install --cask webull #US
 
 # 3D Printer Software
 brew install --cask bambu-studio
