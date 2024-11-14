@@ -20,6 +20,7 @@ brew install plantuml
 
 # Python development
 brew install python3
+brew install uv
 
 # Rust development
 brew install rust
