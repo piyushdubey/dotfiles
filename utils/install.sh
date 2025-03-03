@@ -109,10 +109,15 @@ brew install --cask bitwarden
 brew install --cask discord 
 brew install --cask slack
 brew install --cask zoom
+brew install --cask whatsapp
+brew install --cask signal
 
 # Stock/Options Trading packages
 brew install --cask tradingview #India
 brew install --cask webull #US
+
+# Adobe Acrobat Reader
+brew install --cask adobe-acrobat-reader
 
 # 3D Printer Software
 brew install --cask bambu-studio
