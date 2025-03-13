@@ -22,6 +22,10 @@ brew install plantuml
 brew install python3
 brew install uv
 
+# Ruby development
+brew install ruby
+brew install bundler
+
 # Rust development
 brew install rust
 
