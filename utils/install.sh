@@ -22,7 +22,7 @@ brew install plantuml
 brew install python3
 brew install uv
 
-# Ruby development
+# Ruby 
 brew install ruby
 brew install bundler
 
@@ -33,7 +33,7 @@ brew install rust
 brew install go
 
 # IDEs and other guis
-brew install --cask mysql-shell
+brew install --cask postman
 brew install --cask quicklook-json
 brew install --cask sequel-ace
 brew install --cask visual-studio-code
