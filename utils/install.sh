@@ -105,7 +105,7 @@ brew install --cask yubico-yubikey-manager
 brew install --cask maccy
 brew install --cask vlc
 brew install --cask sourcetree
-
+brew install --cask bruno
 brew install --cask yubico-authenticator
 brew install --cask bitwarden
 
