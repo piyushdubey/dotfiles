@@ -3,7 +3,7 @@
 
 # Build variables.
 PREFIX ?= $(PWD)
-BREW_PREFIX=$(brew --prefix)
+BREW_PREFIX := $(shell brew --prefix)
 
 .PHONY: all
 all: clean bootstrap dotfiles dnsmasq
@@ -22,9 +22,9 @@ bootstrap: #! Install homebrew, oh-my-zsh, and iTerm.
 
 	@# Configure zsh and install oh-my-zsh.
 	@brew install --cask iterm2
-	@if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then \
-  		echo "${BREW_PREFIX}/bin/zsh" | sudo tee -a /etc/shells; \
-  		chsh -s "${BREW_PREFIX}/bin/zsh"; \
+	@if ! fgrep -q "$(BREW_PREFIX)/bin/zsh" /etc/shells; then \
+  		echo "$(BREW_PREFIX)/bin/zsh" | sudo tee -a /etc/shells; \
+  		chsh -s "$(BREW_PREFIX)/bin/zsh"; \
 	fi;
 
 	@# Install the Solarized Dark theme
@@ -39,10 +39,10 @@ clean: #! Clean up all traces of these dotfiles.
 .PHONY: dnsmasq
 dnsmasq: #! Set up dnsmasq for routing to .docker hosts.
 	brew install dnsmasq
-	$(RM) /usr/local/etc/dnsmasq.conf && \
-		mkdir -p /usr/local/etc/dnsmasq.d && \
-		ln -sfn $(CURDIR)/dnsmasq/dnsmasq.conf /usr/local/etc/dnsmasq.conf && \
-		ln -sfn $(CURDIR)/dnsmasq/dnsmasq.d/docker.conf /usr/local/etc/dnsmasq.d/docker.conf
+	$(RM) $(BREW_PREFIX)/etc/dnsmasq.conf && \
+		mkdir -p $(BREW_PREFIX)/etc/dnsmasq.d && \
+		ln -sfn $(CURDIR)/dnsmasq/dnsmasq.conf $(BREW_PREFIX)/etc/dnsmasq.conf && \
+		ln -sfn $(CURDIR)/dnsmasq/dnsmasq.d/docker.conf $(BREW_PREFIX)/etc/dnsmasq.d/docker.conf
 	sudo mkdir -p /etc/resolver && \
 		sudo ln -sfn $(CURDIR)/dnsmasq/resolver/docker /etc/resolver/docker
 	sudo brew services restart dnsmasq

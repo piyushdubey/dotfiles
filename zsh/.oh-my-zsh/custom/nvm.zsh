@@ -1,22 +1,13 @@
-# NVM
+# Lazy-load NVM to avoid ~300ms shell startup penalty.
+# NVM is only loaded when you first call nvm, node, or npm.
 lazynvm() {
-  unset -f nvm node npm
+  unset -f nvm node npm npx
   export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 }
 
-nvm() {
-  lazynvm
-  nvm $@
-}
-
-node() {
-  lazynvm
-  node $@
-}
-
-npm() {
-  lazynvm
-  npm $@
-}
+nvm() { lazynvm; nvm "$@"; }
+node() { lazynvm; node "$@"; }
+npm() { lazynvm; npm "$@"; }
+npx() { lazynvm; npx "$@"; }

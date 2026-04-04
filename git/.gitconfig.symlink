@@ -2,57 +2,30 @@
     path = ~/.gitconfig.local
 
 [alias]
-    # add
     a = add --all
     ap = add --patch
-
-    # branch
-    b = branch -v                       # verbose
-
-    # commit
-    c = commit -v                       # open up an editor
+    br = branch
+    b = branch -v
+    c = commit -v
     cam = commit --amend
-
-    # checkout
     co = checkout
     cp = cherry-pick
-    cb = checkout -b                    # new branch
-
-    # credit an author on the latest commit.
+    cb = checkout -b
     credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
-
-    # List contributors with number of commits
     contributors = shortlog --summary --numbered
-
-    # diff
     d = diff
-    dc = diff --cached                  # diff unstaged changes
-
-    # fetch
+    dc = diff --cached
     f = fetch origin
-
-    # log
     l = log --graph --date=short
-
-    # merge
     m = merge
-
-    # push
     p = push origin
-    pf = push origin --force
-
-    # reset
+    pf = push origin --force-with-lease
     rh = reset --hard
-
-    # stash
     sth = stash -u
     sthp = stash pop
-
-    # status
     st = status
 
 [apply]
-    # Detect whitespace errors when applying a patch
     whitespace = fix
 
 [branch]
@@ -75,16 +48,8 @@
 [core]
     autocrlf = false
     editor = vim
-
-    # Treat spaces before tabs and all kinds of trailing whitespace as an error
-	# [default] trailing-space: looks for spaces at the end of a line
-	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
-
-	# Make `git rebase` safer on OS X
-	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
-	trustctime = false
-	editor = vim
+    whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+    trustctime = false
 
 [format]
     pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
@@ -92,20 +57,16 @@
 [merge]
     summary = true
     verbosity = 1
-    tool = mvimdiff
-
-[mergetool]
-    prompt = false
 
 [push]
-    # 'git push' will push the current branch to its tracking branch
-    # the usual default is to push all branches
-    default = upstream
+    default = current
 
 [rerere]
-    # Remember my merges
-    # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
     enabled = true
 
 [commit]
-	gpgsign = false
+    gpgsign = false
+
+[user]
+    name = Piyush Dubey
+    email = piyushdubey07@gmail.com

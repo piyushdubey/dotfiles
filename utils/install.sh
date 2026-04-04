@@ -1,130 +1,96 @@
 #!/bin/sh
 
-# Install things we need for local development.
+# Install development tools and applications via Homebrew.
 printf '\nInstalling development packages...\n'
 
-# Javascript development
+# Core CLI tools
 brew install jq
+brew install htop
+brew install tree
+brew install wget
+brew install ripgrep
+brew install uv
+
+# Javascript
 brew install node
 brew install nvm
 brew install yarn
-brew install htop
 mkdir -p ~/.nvm
 
-# Java development
-brew install java
+# Java
+brew install openjdk
+brew install maven
 
-# PlantUML (PlantUML dependencies - java, graphviz, plantuml)
-brew install graphviz
-brew install plantuml
-
-# Python development
+# Python
 brew install python3
-brew install uv
 
-# Ruby 
+# Ruby
 brew install ruby
-brew install bundler
 
-# Rust development
+# Rust
 brew install rust
 
-# Go development
+# Go
 brew install go
 
-# IDEs and other guis
-brew install --cask postman
-brew install --cask quicklook-json
-brew install --cask sequel-ace
-brew install --cask visual-studio-code
+# Docker
 brew install docker
 brew install docker-compose
 brew install kubectl
 
-# Compilers, and clis.
+# Cloud CLIs
 brew install awscli
 brew install azure-cli
-brew install gcc
-brew install protobuf
-brew install gettext
-brew install pkg-config
-brew install supabase/tap/supabase
 brew install s3cmd
+brew install supabase/tap/supabase
 brew install --cask google-cloud-sdk
 
-brew link --force gettext
+# GUI applications
+printf '\nInstalling applications...\n'
 
-# Install things we use for collaboration and productivity.
-printf '\nInstalling collaboration and productivity packages...\n'
+# IDEs & dev tools
+brew install --cask visual-studio-code
+brew install --cask bruno
+brew install --cask sourcetree
 
 # Browsers
-brew install --cask firefox
 brew install --cask google-chrome
 
-# Productivity boosters
-brew install speedtest-cli
-brew install tree
-brew install wget
-brew install fig
-
-## Productivity Tools
-
-# Calibre
-brew install --cask calibre
-
-# Notion
+# Productivity
 brew install --cask notion
-
-# Microsoft Office
 brew install --cask microsoft-office
-
-# Mega Sync
-brew install --cask megasync
-
-# Dropbox
-brew install --cask dropbox
-
-# Google Drive
 brew install --cask google-drive
-
-# Photo editing
-brew install --cask gimp
-
-# Spotify
+brew install --cask calibre
 brew install --cask spotify
 
-# Wacom + Inkscape
-brew install --cask wacom-tablet
-brew install --cask inkscape
-
-# Tool chain
-brew install --cask flux 
-brew install --cask keepingyouawake 
+# Utilities
+brew install --cask flux
+brew install --cask keepingyouawake
 brew install --cask rectangle
-brew install --cask yubico-yubikey-manager 
 brew install --cask maccy
 brew install --cask vlc
-brew install --cask sourcetree
-brew install --cask bruno
-brew install --cask yubico-authenticator
 brew install --cask bitwarden
+brew install --cask yubico-authenticator
+brew install --cask iterm2
 
-# Collaboration packages
-brew install --cask discord 
+# Design & media
+brew install --cask gimp
+brew install --cask inkscape
+brew install --cask bambu-studio
+
+# Notes & knowledge base
+brew install --cask obsidian
+
+# Communication
+brew install --cask discord
 brew install --cask slack
 brew install --cask zoom
 brew install --cask whatsapp
 brew install --cask signal
 
-# Stock/Options Trading packages
-brew install --cask tradingview #India
-brew install --cask webull #US
+# Finance
+brew install --cask tradingview
+brew install --cask webull
 
-# Adobe Acrobat Reader
-brew install --cask adobe-acrobat-reader
-
-# 3D Printer Software
-brew install --cask bambu-studio
-
-npm i -g \
-    aws-cdk
+# Global npm packages
+npm i -g aws-cdk
