@@ -94,3 +94,4 @@ brew install --cask webull
 
 # Global npm packages
 npm i -g aws-cdk
+npm i -g @anthropic-ai/claude-code
