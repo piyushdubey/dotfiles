@@ -4,6 +4,7 @@
 printf '\nInstalling development packages...\n'
 
 # Core CLI tools
+brew install gh
 brew install jq
 brew install htop
 brew install tree
