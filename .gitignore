@@ -1,6 +1,20 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
 *~
 *.swp
 *.swo
+.idea/
+.vscode/
+
+# Secrets and local overrides
 .env
 .env.local
+.gitconfig.local
+*.local
+
+# Generated / installed
+zsh/.oh-my-zsh/.oh-my-zsh

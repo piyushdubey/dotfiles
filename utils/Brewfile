@@ -1,0 +1,86 @@
+# =============================================================================
+# Brewfile — declarative package list for `brew bundle`
+# Run via: make installers   (or: brew bundle --file=utils/Brewfile)
+# =============================================================================
+
+# ---------- Shell & system utilities ----------------------------------------
+brew "gh"           # GitHub CLI
+brew "jq"           # JSON processor
+brew "htop"         # Process viewer
+brew "tree"         # Directory listing
+brew "wget"         # File downloader
+brew "ripgrep"      # Fast file search (rg)
+brew "uv"           # Fast Python package manager
+brew "fzf"          # Fuzzy finder (used by many CLIs)
+
+# ---------- Runtimes & languages --------------------------------------------
+brew "node"
+brew "nvm"
+brew "yarn"
+brew "openjdk"
+brew "maven"
+brew "python@3.13"
+brew "ruby"         # keg-only — PATH set in .zshrc
+brew "rust"
+brew "go"
+
+# ---------- DevOps & cloud --------------------------------------------------
+brew "docker"
+brew "docker-compose"
+brew "kubectl"
+brew "awscli"
+brew "azure-cli"
+brew "s3cmd"
+brew "supabase/tap/supabase"
+cask "google-cloud-sdk"
+
+# ---------- AI & local models -----------------------------------------------
+brew "ollama"           # Local LLM runner (CLI). Start with: ollama serve
+cask "lm-studio"        # Local LLM runner (GUI)
+cask "wispr-flow"       # AI voice-to-text dictation
+
+# ---------- Development apps ------------------------------------------------
+cask "visual-studio-code"
+cask "cursor"
+cask "iterm2"
+cask "bruno"            # API client (Postman alternative)
+cask "sourcetree"
+cask "google-chrome"
+
+# ---------- Productivity & lifestyle ----------------------------------------
+# Notes & knowledge
+cask "obsidian"
+cask "notion"
+
+# Office & files
+cask "microsoft-office"
+cask "google-drive"
+cask "calibre"
+
+# Communication
+cask "slack"
+cask "discord"
+cask "zoom"
+cask "whatsapp"
+cask "signal"
+
+# Finance & trading
+cask "tradingview"
+cask "webull"
+
+# Media
+cask "spotify"
+cask "vlc"
+
+# Design & creative
+cask "gimp"
+cask "inkscape"
+cask "bambu-studio"
+
+# ---------- Mac system utilities --------------------------------------------
+cask "rectangle"
+cask "maccy"
+cask "keepingyouawake"
+cask "flux"
+cask "bitwarden"
+cask "yubico-authenticator"
